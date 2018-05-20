@@ -13,6 +13,9 @@ Docker datastax Notes: https://docs.datastax.com/en/docker/doc/docker
 
     ○ docker run -e DS_LICENSE=accept -p 8888:8888 --name my-opscenter -d datastax/dse-opscenter
     ○ docker run -e DS_LICENSE=accept --link my-opscenter:opscenter --name my-dse -d datastax/dse-server
+    ○ docker exec -it my-dse nodetool status 
+    
+    For opening the DSE Studio :
     ○ docker run -e DS_LICENSE=accept -p 9090:9091 -d datastax/dse-studio --link my-dse --name my-studio
 
 Docker Basic Commands for Ubuntu setup:
