@@ -5,6 +5,8 @@ To switch to Linux container from PS :  & 'C:\Program Files\Docker\Docker\Docker
 
 To switch back to Windows container from PS :  & 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
 
+and probably also have : docker run -it ubuntu
+
 #######################
 DOCKER NOTES FROM LOCAL
 #######################
