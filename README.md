@@ -1,8 +1,9 @@
 $ This project can be used to get useful commands for bringing up docker containers on the windows 10 pro enviroments.
 Note : Windows 10 docker would be by default in the windows container mode which to my understanding would not be very useful for Java developers. Better have linux container up and running. Also note that I faced lot of issues having participated in the Windows Insider Program. So incase you have your docker daemon running successfully, better leave it at that.
 
-To switch to Linux container from PS : & 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
-To switch back to Windows container from PS : & 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
+To switch to Linux container from PS :  & 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
+
+To switch back to Windows container from PS :  & 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
 
 #######################
 DOCKER NOTES FROM LOCAL
