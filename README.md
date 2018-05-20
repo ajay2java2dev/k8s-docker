@@ -13,6 +13,7 @@ Docker datastax Notes: https://docs.datastax.com/en/docker/doc/docker
 
     ○ docker run -e DS_LICENSE=accept -p 8888:8888 --name my-opscenter -d datastax/dse-opscenter
     ○ docker run -e DS_LICENSE=accept --link my-opscenter:opscenter --name my-dse -d datastax/dse-server
+    	○ Note: the dse-server can be enabled with -g or -k or -s to enable graph-mode or analytics-spark mode or search mode.
     ○ docker exec -it my-dse nodetool status 
     
     For opening the DSE Studio :
