@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp-replicaset
+    type: front-end
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: myapp-replicaset
+      labels:
+        app: myapp
+        type: front-end
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
+  # Major difference b/w replicaset and replicationcontroller is the selector
+  selector:
+    matchLabels:
+      type: front-end

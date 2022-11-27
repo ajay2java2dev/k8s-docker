@@ -1,0 +1,11 @@
+Kubernetes Commands Cheat Sheet
+###############################
+1) check pods => kubectl get pods
+
+2) create pod through yaml file def => kubectl create -f first-pod-def.yml
+
+3) create a pod with nginx image => kubectl run pod-name --image nginx
+
+4) check which NODE the specfic POD is attached to => kubectl get pod <pod-name> -o wide
+
+5) how many containers are part of current pod => 
